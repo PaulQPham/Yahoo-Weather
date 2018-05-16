@@ -82,7 +82,8 @@ function updateCurrentCity(cityName) {
         type: 'GET',
         format: 'json',
         success(response) {
-            document.getElementById('forecastMessage').innerHTML = query.results.channel.item.forecast;
+
+            document.getElementById('forecastMessage').innerHTML = JSON.parse(response);
         }
       });
 }
