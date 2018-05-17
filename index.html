@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang='en'><head>
     <title>Weather Forecast</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
     <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>   
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     <!--<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>-->
@@ -8,7 +8,18 @@
 <body>
     <header class="currentCityHeader">
         <h1 id='currentCity'>Please Select a City</h1>
-        <p id='forecastMessage'>city forecast here</p>   
+        <ol id='tenDayForecast'>
+           <button id='0'></button>
+           <button id='1'></button>
+           <button id='2'></button>
+           <button id='3'></button>
+           <button id='4'></button>
+           <button id='5'></button>
+           <button id='6'></button>
+           <button id='7'></button>
+           <button id='8'></button>
+           <button id='9'></button>
+        </ol>  
     </header>
     <content id="listOfCities"></content>
     <footer>
