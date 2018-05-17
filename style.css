@@ -4,6 +4,10 @@
     text-align: center;
     color: aliceblue;
     font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 250px;
+    padding-top: 50px;
 }
 
 #listOfCities {
@@ -12,23 +16,25 @@
 }
 
 #city {
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 10%; /* Set a width if needed */
-    display: block;  
+    background-color: #4CAF50;
+    border: 1px solid green;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 10%;
+    display: block;
 }
 
 body {
     align-content: center;
+    background-image: url('http://www.weather1.com/assets/images/wallpapers/fly00712_sm.jpg');
+    background-size: cover;
 }
 
 .oneDayForecast {
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
-    width: 8%;
-    height: 80px;
+    background-color: #4CAF50;
+    border: 1px solid green;
+    width: 9%;
+    height: 160px;
     display: inline-block;
 }

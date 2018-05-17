@@ -59,10 +59,26 @@ function updateCurrentCityUI(jsonObject) {
     var index = '0';
     jsonObject.query.results.channel.item.forecast.forEach(function(oneDayForecast) {
         document.getElementsByClassName('oneDayForecast')[index].innerHTML = '';
-        document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode(oneDayForecast.day));
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode(oneDayForecast.day + ' '));
+
+        var br = document.createElement("br");
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(br);
+
         document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode(oneDayForecast.date));
-        document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode(oneDayForecast.high));
-        document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode(oneDayForecast.low));
+
+        var br = document.createElement("br");
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(br);
+
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode('High: ' + oneDayForecast.high + ' '));
+
+        var br = document.createElement("br");
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(br);
+
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(document.createTextNode('Low: ' + oneDayForecast.low + ' '));
+
+        var br = document.createElement("br");
+        document.getElementsByClassName('oneDayForecast')[index].appendChild(br);
+        
         document.getElementsByClassName('oneDayForecast')[index++].appendChild(document.createTextNode(oneDayForecast.text));
     })
 }
