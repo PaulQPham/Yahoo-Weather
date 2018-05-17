@@ -17,10 +17,18 @@
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
+    width: 10%; /* Set a width if needed */
     display: block;  
 }
 
 body {
     align-content: center;
+}
+
+.oneDayForecast {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    width: 8%;
+    height: 80px;
+    display: inline-block;
 }
